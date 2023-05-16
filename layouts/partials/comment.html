@@ -99,8 +99,7 @@ twikoo.init({
 </script>
 {{ end }}
 
-
-{{ if .Params.enableCommento }}
+{{ if .Site.Params.enableCommento }}
+<script defer src="{{ .Site.Params.commento.commentoURL }}/js/commento.js"></script>
 <div id="commento"></div>
-<script src="{{ .Site.Params.commento.commentoURL }}/js/commento.js"></script>
 {{ end }}
