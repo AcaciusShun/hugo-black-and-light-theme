@@ -32,7 +32,7 @@
   </div>
   {{ partial "giscus.html" . }}
   <div class="post-comment-wrapper">
-    {{ if eq .Params.comment false }}
+    {{ if eq .Site.Params.comment false }}
     <p style="opacity: 0.6" align="center">
         <small>{{ "comments_disabled" }}</small>
     </p>
