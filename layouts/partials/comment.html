@@ -98,3 +98,9 @@ twikoo.init({
         async>
 </script>
 {{ end }}
+
+
+{{ if .Params.enableCommento }}
+<div id="commento"></div>
+<script src="{{ .Site.Params.commento.commentoURL }}/js/commento.js"></script>
+{{ end }}
