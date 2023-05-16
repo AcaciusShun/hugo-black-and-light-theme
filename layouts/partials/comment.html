@@ -83,20 +83,21 @@ twikoo.init({
 
 {{ if .Site.Params.enableGiscus }}
 <div id="giscus" class="giscus"></div>
-
+{{.Site.Params.giscus.data_repo}}
 <script src="https://giscus.app/client.js"
-        data-repo="{{ .Site.Params.giscus.data_repo}}"
-        data-repo-id="{{ .Site.Params.giscus.data_repo_id}}"
-        data-category="{{ .Site.Params.giscus.data_category}}"
-        data-category-id="{{ .Site.Params.giscus.data_category_id}}"
-        data-mapping="{{ .Site.Params.giscus.data_mapping}}"
-        data-strict="{{ .Site.Params.giscus.data_strict}}"
-        data-reactions-enabled="{{ .Site.Params.giscus.data_reactions_enabled}}"
-        data-emit-metadata="{{ .Site.Params.giscus.data_emit_metadata}}"
-        data-input-position="{{ .Site.Params.giscus.data_input_position}}"
-        data-theme="{{ .Site.Params.giscus.data_theme}}"
-        data-lang="{{ .Site.Params.giscus.data_lang}}"
-        crossorigin="{{ .Site.Params.giscus.crossorigin}}"
+        data-repo="bailongctui/bailongctui.github.io"
+        data-repo-id="R_kgDOHV6OYg"
+        data-category="General"
+        data-category-id="DIC_kwDOHV6OYs4CWRow"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
         async>
 </script>
 
