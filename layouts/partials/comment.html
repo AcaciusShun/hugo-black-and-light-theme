@@ -82,6 +82,8 @@ twikoo.init({
 {{ end }}
 
 {{ if .Site.Params.enableGiscus }}
+<div id="giscus" class="giscus"></div>
+
 <script src="https://giscus.app/client.js"
         data-repo="{{ .Site.Params.giscus.data_repo}}"
         data-repo-id="{{ .Site.Params.giscus.data_repo_id}}"
@@ -97,6 +99,7 @@ twikoo.init({
         crossorigin="{{ .Site.Params.giscus.crossorigin}}"
         async>
 </script>
+
 {{ end }}
 
 {{ if .Site.Params.enableCommento }}

@@ -23,6 +23,9 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     {{ partial "styles.html" . }}
+    
+    {{ partial "giscus.html" . }}
+
     {{ partial "scroll.html" . }}
 
     {{ range .AlternativeOutputFormats -}}
