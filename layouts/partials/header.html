@@ -36,6 +36,10 @@
   <body>
     <section id=nav>
       <h1><a href="/">{{ .Site.Params.sitename }}</a></h1>
+      <span>
+        with Ukraine
+        <img role="img" class="emoji" alt="🇺🇦" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f1fa-1f1e6.svg">
+      </span>
       <ul>
         {{ range .Site.Menus.main }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
